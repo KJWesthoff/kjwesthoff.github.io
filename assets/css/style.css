@@ -151,6 +151,11 @@ header nav ul li a:hover {
     justify-content: space-around;
   }
  
+.tile-container a{
+    text-decoration: none;
+    color: var(--primary-font-color); 
+}
+
 /* Images in the tiles */
 .image-1{
     background-image: url("../images/emerald-lake-closeup.jpeg");
@@ -192,12 +197,10 @@ header nav ul li a:hover {
     min-height: 400px;
   }
 
-  .image:hover{
+  .image-l:hover{
       content: "";
       background-image: url("../images/run-buddy-screen.png");
-      /* background: linear-gradient(rgba(252, 56, 66, 0.3), var(--secondary-color)); */
       border-radius: 20px;
-      z-index: 9999;
   }
 
 
