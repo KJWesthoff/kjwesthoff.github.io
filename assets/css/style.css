@@ -203,6 +203,12 @@ header nav ul li a:hover {
       border-radius: 20px;
   }
 
+  .image-m:hover{
+    content: "";
+    background-image: url("../images/github-svgrepo-com.svg");
+    background-color: white;
+    border-radius: 20px;
+}
 
 /*------------- 
 Contact section
