@@ -3,11 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K-J Portfolio</title>
+    <title>KJ Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- header and navi -->
+    <header>
+        <h1>
+            Portfolio
+        </h1>
+        <!-- Navigation bar in header -->
+        <nav> 
+            <ul>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                
+                <li>
+                    <a href="#work">Work</a>
+                </li>
+                
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Jumbo -->
+    <section class="hero">
     
 
+
+    </section>
+
+    <section id="about" class="about">
+       <h1>
+           About
+       </h1> 
+        <p> 
+            can't reply to Igor's answer to suggest an improvement to his solution, but his fiddle did not work entirely for a responsive layout
+            The first solution with flex-grow: 0; doesn't stretch the items to fill the containers. The second solution with invisible items works, but expands the height of the container. Removing the top/bottom margins did the trick though.   
+            I edited the jsfiddle, to make it both responsive and fix the container-expanding invisible items, using comments to explain what I changed. It still doesn't work if the container is larger than the
+        </p>
+    </section>
+
+
+    <section id=work class="work">
+        <h1>Work</h1>
+        <div class=container>
+            <div class="tile-container">
+
+                <div>One</div>
+                <div>Two</div>
+                <div>Three</div>
+                <div>Four</div>
+              
+<!-- 
+
+                    <div class="image image-1">
+                        <img src="./assets/images/emerald-lake-closeup.jpeg" alt="">
+                    </div>
+                    
+                    <div class="image image-2">
+                        <img src="./assets/images/emerald-lake-closeup2.jpeg" alt="">
+                    </div>
+                    
+                    <div class="image image-3">
+                        <img src="./assets/images/emerald-lake-closeup3.jpeg" alt="">
+                    </div>
+                    
+                    <div class="image image-4">
+                        <img src="./assets/images/emerald-lake-overview.jpeg" alt="">
+                    </div>
+              
+                    <div class="image image-5">
+                        <img src="./assets/images/geyser.jpeg" alt="">
+                    </div>
+                    
+                    <div class="image image-6">
+                        <img src="./assets/images/IMG_3138.jpeg" alt="">
+                    </div>
+                    
+                    <div class="image image-7">
+                        <img src="./assets/images/nevada-road-smoke.jpeg" alt="">
+                    </div>
+                    
+                    <div class="image image-8">
+                        <img src="./assets/images/tree-center.jpeg" alt="">
+                    </div>
+                 -->
+            </div>
+            
+        </div>
+    </section>
+
+
+    <section id=contact class="contact">
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">T:</a>
+                </li>
+                
+                <li>
+                    <a href="#work">W:</a>
+                </li>
+                
+                <li>
+                    <a href="#contact">Li</a>
+                </li>
+
+            </ul>
+        </nav>                
+    </section>
+
     
+
 </body>
 </html>
