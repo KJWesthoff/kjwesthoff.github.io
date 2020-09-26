@@ -9,40 +9,44 @@
   --primary-font-color: red;
   --secondary-color: #024e76;
   --tertiary-color: #760253;
+  --header-width: 200px; /*  same width of the header everywhere */
 }
 
 body {
   color: var(--primary-font-color);
   font-family: Helvetica, Arial, sans-serif;
-  
-
 }
 
-/* Header and nav bar styling */
 
-header {
+
+/* Overload h1 overall -propbably "poor form" on larger projects but done to keep this page strigngent */
+
+h1 {
+    width: var(--header-width);
+    flex-basis: content;
+    flex-grow: 0;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-font-color);
+    margin: 0;
+    border-right: 3px solid var(--primary-font-color);  
+  }
+
+
+/*-------------------------
+ Header and nav bar styling
+ ----------------------- */
+
+header{
   padding: 20px 35px;
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   top: 0;
-  
-  
 }
 
-header h1 {
-  min-width: 200px;
-  max-width: 300px;
-  flex-basis: content;
-  flex-grow: 0;
-  font-weight: bold;
-  font-size: 36px;
-  color: var(--primary-font-color);
-  margin: 0;
-  border-right: 3px solid var(--primary-font-color);
-  
-}
+
 
 header a {
   text-decoration: none;
@@ -76,7 +80,9 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
-/* Hero styling */
+/*-----------
+ Hero styling 
+ ----------*/
 
 .hero {
   background-image: url("../images/hero-car.jpeg");
@@ -89,7 +95,9 @@ header nav ul li a:hover {
   align-items: flex-start;
 }
 
-/* About section styling */
+/*--------------------
+ About section styling
+--------------------*/
 
 .about {
     display: flex;
@@ -102,26 +110,16 @@ header nav ul li a:hover {
     
   }
 
-.about h1 {
-    min-width: 200px;
-    max-width: 300px;
 
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-font-color);
-    margin: 0;
-    
-    border-right: 3px solid var(--primary-font-color);
-    
-  }
-  
  .about p{
     flex: 1 0;
     padding: 0 15px    
 
  }
 
-/* Work Section */
+/*-----------
+ Work Section
+ ----------*/
 
 .work {
     display: flex;
@@ -134,15 +132,7 @@ header nav ul li a:hover {
     
   }
 
- .work h1 {
-    min-width: 200px;
-    max-width: 300px;
-    font-weight: bold;
-    font-size: 36px;
-    color: var(--primary-font-color);
-    margin: 0;   
-    border-right: 3px solid var(--primary-font-color);    
-  }
+
   
 
 /* Image tile work section */
@@ -180,6 +170,9 @@ header nav ul li a:hover {
     height: 400px;
 }
 
+/*------------- 
+Contact section
+-------------*/
 
 .contact {
     padding: 20px 35px;
@@ -191,15 +184,37 @@ header nav ul li a:hover {
   }
 
 
-.contact h1 {
-    min-width: 200px;
-    max-width: 300px;
-    flex-basis: content;
-    flex-grow: 0;
-    font-weight: bold;
-    font-size: 36px;
+  .contact a {
+    text-decoration: none;
     color: var(--primary-font-color);
-    margin: 0;
-    border-right: 3px solid var(--primary-font-color);
-    
   }
+  
+  .contact nav {
+    margin: 7px 0px;
+    width: calc(100% - var(--header-width)); 
+  }
+  
+  .contact nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .contact nav ul li a {
+    margin: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    padding: 15px;
+    flex: 0 1;
+  
+  }
+  
+  .contact nav ul li a:hover {
+    background: var(--secondary-color);
+    color: var(--primary-font-color);
+    border-radius: 5px;
+    text-shadow: none;
+  }
+  
