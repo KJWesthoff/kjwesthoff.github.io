@@ -40,14 +40,42 @@
 
     <!-- About section -->
     <section id="about" class="about">
-       <h1>
+        <h1>
            About
-       </h1> 
-        <p> 
-            can't reply to Igor's answer to suggest an improvement to his solution, but his fiddle did not work entirely for a responsive layout
-            The first solution with flex-grow: 0; doesn't stretch the items to fill the containers. The second solution with invisible items works, but expands the height of the container. Removing the top/bottom margins did the trick though.   
-            I edited the jsfiddle, to make it both responsive and fix the container-expanding invisible items, using comments to explain what I changed. It still doesn't work if the container is larger than the
-        </p>
+        </h1> 
+        
+        <div class="about-container">
+            <div class ="about-item about-me">
+               
+                <h2>About Me </h2>
+                <div class="about-me-text">
+                   <ul> 
+                    <li>
+                        Karl-Johan Westhoff
+                    </li>   
+                    <li>
+                        Aspiring web developer
+                    </li>
+                    <li>
+                        Loves to go family camping in beautiful Califirnia 
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            <div class ="about-item Picture-me">
+                <h2>Picture</h2>
+                
+            </div>
+            <div class ="about-item CV-me">
+                CV       
+                <p> 
+                    can't reply to Igor's answer to suggest an improvement to his solution, but his fiddle did not work entirely for a responsive layout
+                    The first solution with flex-grow: 0; doesn't stretch the items to fill the containers. The second solution with invisible items works, but expands the height of the container. Removing the top/bottom margins did the trick though.   
+                    I edited the jsfiddle, to make it both responsive and fix the container-expanding invisible items, using comments to explain what I changed. It still doesn't work if the container is larger than the
+                </p>
+            </div>
+      
+        </div>
     </section>
 
     <!-- Work section with tiles -->
