@@ -180,6 +180,7 @@ background-image: url("../images/selfie.jpeg");
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: flex-end;
   }
  
 .tile-container a{
@@ -200,6 +201,15 @@ background-image: url("../images/selfie.jpeg");
 .image-4{
     background-image: url("../images/tree-center.jpeg");
 }
+
+.image-5{
+    background-image: url("../images/emerald-lake-overview.jpeg");
+}
+
+.image-6{
+    background-image: url("../images/yellowstone-1.jpeg");
+}
+
 .image-l{
     background-image: url("../images/twin-falls-bridge.jpeg");
 }
@@ -222,14 +232,15 @@ background-image: url("../images/selfie.jpeg");
 
 
 
-
+/* Make the latest project bigger*/
   .image-l {   
     flex:1 0 20%;   
-    order: 0; 
-    transition-duration: 0.5s;
-    align-self: flex-start;
+    
+    
+    max-width: 400px;
     min-height: 400px;
-  }
+  } 
+ 
 /* -----------------------
 Aaimations-Transformations
 -------------------------*/
