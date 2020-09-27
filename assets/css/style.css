@@ -191,7 +191,7 @@ background-image: url("../images/selfie.jpeg");
 /* Images in the tiles */
 .image-1{
     background-image: url("../images/emerald-lake-closeup.jpeg");
-}
+}    
 .image-2{
     background-image: url("../images/geyser.jpeg");
 }
@@ -262,12 +262,8 @@ Aaimations-Transformations
   .image-l:hover{
       content: "";
       background-image: url("../images/run-buddy-screen.png"); 
-  }
-/* 
-  .Picture-me:hover{
-    content: "";
-    background-image: url("../images/selfie.jpeg"); 
-} */
+      background-position: right;
+}
 
 
 
