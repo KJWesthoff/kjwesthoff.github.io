@@ -210,8 +210,12 @@ background-image: url("../images/selfie.jpeg");
     background-image: url("../images/yellowstone-1.jpeg");
 }
 
-.image-l{
+.image-t{
     background-image: url("../images/twin-falls-bridge.jpeg");
+}
+
+.image-l{
+  background-image: url("../images/yellowstone-1.jpeg");
 }
 
 /* Tile image formatting */
@@ -259,12 +263,17 @@ Aaimations-Transformations
     
   }
 
-  .image-l:hover{
+  .image-t:hover{
       content: "";
       background-image: url("../images/run-buddy-screen.png"); 
       background-position: right;
 }
 
+.image-l:hover{
+  content: "";
+  background-image: url("../images/trein-screenshot.png"); 
+  background-position: left;
+}
 
 
   .image-m:hover{
