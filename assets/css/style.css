@@ -269,9 +269,15 @@ Aaimations-Transformations
       background-position: right;
 }
 
-.image-l:hover{
+.image-1:hover{
   content: "";
   background-image: url("../images/trein-screenshot.png"); 
+  background-position: left;
+}
+
+.image-l:hover{
+  content: "";
+  background-image: url("../images/Logophile.png"); 
   background-position: left;
 }
 
